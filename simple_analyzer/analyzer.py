@@ -32,5 +32,22 @@ class Analyzer():
                     res += 1
         return res
     
+    def average_number(self):
+        res = 0
+        for elem in self.data:
+            res += elem
+        if(len(self.data) > 0):
+            res /= len(self.data)
+        return res
+    
+    def max_min_diff(self):
+        if(len(self.data) > 0):
+            mmax = self.data[0]
+            mmin = self.data[0]
+            for elem in self.data:
+                mmax = max(elem, mmax)
+                mmin = min(elem, min)
+            return mmax - mmin
+    
 
 
