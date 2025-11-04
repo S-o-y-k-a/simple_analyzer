@@ -27,7 +27,7 @@ class Analyzer():
     def increasing_pairs(self):
         res = 0
         if(len(self.data) > 1):
-            for i in range(len(self.data)) - 1:
+            for i in range(len(self.data) - 1):
                 if(self.data[i] < self.data[i + 1]):
                     res += 1
         return res
