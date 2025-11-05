@@ -17,10 +17,12 @@ def read_config():
 
 
 def main():
-    print(f"Read_config: {read_config()}")
+    
 
     interval, sequence_length = read_config()
     analyzer = Analyzer()
+
+    print(f"Interval: {interval}, sequence length: {sequence_length}")
 
     while True:
 
